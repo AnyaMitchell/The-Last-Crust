@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Home Page</title>
+        <link rel="icon" type="image/png" href="bread.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="decription" content="home page for 'The Last Crust' bakery website">
+        <meta name="keywords" content="bakery, Manchester, bread, pastries, coffee, juice, cocktails, workshops, masterclass, events">
+        <script src = "script.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <img id="logoHead" src="name.png" width="600px" alt="The Last Crust">
+            <img id="doughHead"src="dough.jpg" width="600px" alt="male hands kneading dough">
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="book.html">Book</a></li>
+            </ul>
+        </nav>
+        <main class="home-grid-container">
+        <!--
+            NOT SURE IF TO LEAVE THIS SECTION HERE OR COMPLETELY SCRAP
+            <section class="home-grid-item-1">
+                <h2>Bakery</h2>
+                <img src="dough.jpg" width="600px" alt="kitten with paw up">
+            </section>
+            <section class="home-grid-item-2">
+                <h2>Workshops</h2>
+                <img src="dough.jpg" width="600px" alt="kitten with paw up">
+            </section>
+            <section class="home-grid-item-3">
+                <h2>Events</h2>
+                <img src="dough.jpg" width="600px" alt="kitten with paw up">
+            </section>
+        -->
+            <section class="home-grid-item-4">
+                <h2>Blog</h2>
+                <p>I'm baby cardigan man bun readymade semiotics. Seitan cold-pressed semiotics, mukbang raw denim biodiesel occupy tbh chicharrones DIY farm-to-table la croix. PBR&B portland kogi, solarpunk meh pok pok cornhole la croix sus iceland leggings craft beer. Craft beer asymmetrical slow-carb fit cold-pressed ennui butcher.</p>
+                <p>Single-origin coffee before they sold out deep v poutine, cred pok pok bespoke shoreditch tousled bitters beard fashion axe meh biodiesel flannel. Bodega boys drinking vinegar ennui jean shorts, kombucha copper mug salvia chia irony small batch sus microdosing mumblecore yes plz squid. Meh hammock trust fund authentic, next level master cleanse try-hard. Listicle before they sold out gorpcore narwhal big mood mukbang. Adaptogen solarpunk roof party +1 tofu sustainable actually tumblr kogi. Retro prism shaman vegan poutine chambray sartorial lyft ethical brunch master cleanse adaptogen messenger bag celiac.</p>
+                <p>Hell of man braid chartreuse fashion axe plaid kinfolk 8-bit next level butcher slow-carb four loko vegan fixie. Gentrify pinterest gochujang +1 snackwave shabby chic bushwick portland marxism pabst beard grailed knausgaard. VHS food truck hoodie gentrify slow-carb grailed beard. Banjo truffaut salvia, pop-up roof party raw denim irony art party man bun cliche cronut heirloom. Fashion axe portland ethical lyft, raclette humblebrag Brooklyn palo santo. Sartorial kombucha sriracha food truck scenester knausgaard.</p>
+            </section>
+            <aside class="home-grid-item-5">
+                <h3>Opening Times:</h3>
+                    <ul id="open">
+                        <li>Sun 8am - 2pm</li>
+                        <br>
+                        <li>Mon - Fri 7:30am - 4pm</li>
+                        <br>
+                        <li>Sat 8am - 3pm</li>
+                        <br>
+                    </ul>
+                    <p>Please be aware that certain workshops and events may occur outside our regular operating hours.</p>
+                    <p>Both walk-ins and <a href="book.html">bookings</a> are warmly welcomed.</p>
+                    <p>Our upstairs space is dedicated to workshops and a variety of events. If you wish to reserve this area for your own special function, feel free to reach out to us via phone, <a href="https://mail.google.com/" target="_blank">email</a>, or simply drop by for a friendly conversation.</p>
+            </aside>
+            <section class = "home-grid-item-6" class="quiz">
+                <h2>What pastry are you?</h2>
+                <form name="quiz">
+                    <fieldset id="song">
+                        <legend>
+                            Pick a song:
+                        </legend>
+                            <input type = "radio" name = "song" id = "rooks" value = "rooks"> 
+                                <label for = "rooks">Tom’s Diner - Giant Rooks</label>
+                            <input type = "radio" name = "song" id = "aqua" value = "aqua">
+                                <label for = "aqua">Doctor Jones - Aqua</label>
+                            <input type = "radio" name = "song" id = "shania" value = "shania">
+                                <label for = "shania">That Don’t Impress Me Much - Shania Twain </label>
+                            <input type = "radio" name = "song" id = "killers" value = "killers">
+                                <label for = "killers">Mr. Brightside - The Killers</label>
+                    </fieldset>
+                    <fieldset id="beverage">
+                        <legend>
+                            Pick a beverage:
+                        </legend>
+                            <input type = "radio" name = "beverage" id = "coffee" value = "coffee">
+                                <label for = "coffee">Coffee</label>
+                            <input type = "radio" name = "beverage" id = "juice" value = "juice">
+                                <label for = "juice">Juice</label>
+                            <input type = "radio" name = "beverage" id = "cocktail" value = "cocktail">
+                                <label for = "cocktail">Cocktail</label>
+                            <input type = "radio" name = "beverage" id = "water" value = "water">
+                                <label for = "water">Water</label>
+                    </fieldset>
+                    <fieldset id="film">
+                        <legend>
+                            Pick a film:
+                        </legend>
+                            <input type = "radio" name = "film" id = "eternal" value = "eternal">
+                                <label for = "eternal">Eternal Sunshine of the Spotless Mind</label>
+                            <input type = "radio" name = "film" id = "nemo" value = "nemo">
+                                <label for = "nemo">Finding Nemo</label>
+                            <input type = "radio" name = "film" id = "clueless" value = "clueless">
+                                <label for = "clueless">Clueless</label>
+                            <input type = "radio" name = "film" id = "127" value = "127">
+                                <label for = "127">127 Hours</label>
+                    </fieldset>
+                    <fieldset id="colour">
+                        <legend>
+                            Pick a colour:
+                        </legend>
+                            <input type = "radio" name = "colour" id = "red" value = "red">
+                                <label for = "red">Red</label>
+                            <input type = "radio" name = "colour" id = "yellow" value = "yellow">
+                                <label for = "yellow">Yellow</label>
+                            <input type = "radio" name = "colour" id = "pink" value = "pink">
+                                <label for = "pink">Pink</label>
+                            <input type = "radio" name = "colour" id = "blue" value = "blue">
+                                <label for = "blue">Blue</label>
+                    </fieldset>
+                    <br>
+                    <button class="button" type = "button" onclick = "checkAnswers()">Submit</button>
+                </form>
+            </section>
+            <section class="home-grid-item-7">
+                <h2 id="social">A few mouthwatering snaps from the <a href="https://www.instagram.com/" target="_blank">'gram</a>:</h2>
+            </section>
+            <section class="home-image-grid-1">
+                <img src="croissant.jpg" id="croissant" width="600px" alt="6 different croissants on a wire rack"> 
+            </section>
+            <section class="home-image-grid-2">
+                <img src="macaron.jpg" id="macaron" width="600px" alt="various coloured macarons on a plate with rose petal garnish">
+            </section>
+            <section class="home-image-grid-3">
+                <img src="loafs.jpg" id="loafs" width="600px" alt="3 bread loafs on a floured surface">
+            </section>
+            <section class="home-image-grid-4">
+                <img src="meringue.jpg" id="meringue" width="600px" alt="blackcurrant swirled meringues on a wire rack">
+            </section>
+            <section class="home-image-grid-5">
+                <img src="chocolate.jpg" id="chocolate" width="600px" alt="freshley decorated chocolate cake">
+            </section>
+            <section class="home-image-grid-6">
+                <img src="donut.jpg" id="donut" width="600px" alt="birds eye view of different donuts">
+            </section>
+            <section class="home-grid-item-8">
+                <a href="#top"><img src="up.png" style="width:20px; height:20px;"></a>
+            </section>
+        </main>
+        <footer class="footer">
+            <img class= "footLogo" src="name.png" width="160px" alt="The Last Crust">
+            <ul class="footContact">
+                <li>Crumble Cottage</li>
+                <li>Bread Street</li>
+                <li>Debdale</li>
+                <li>M18 8QF</li>
+                <br>    
+                <li>0161 928 1313</li>
+                <br>
+                <li>
+                <a href="https://mail.google.com/" target="_blank"><img src="email.png" style=" width:20px; height:20px;"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" style=" width:20px; height:20px;"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" style=" width:20px; height:20px;"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="twitter.png" style=" width:20px; height:20px;"></a>
+                <a href="https://www.tiktok.com/" target="_blank"><img src="tiktok.png" style=" width:20px; height:20px;"></a>
+                </li>
+                <br>
+                <li>Copyright 2023 The Last Crust</li>
+            </ul>
+        </footer>
+    </body>
+</html>    

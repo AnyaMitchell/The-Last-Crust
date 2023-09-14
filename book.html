@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Book</title>
+        <link rel="icon" type="image/png" href="bread.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="decription" content="home page for 'The Last Crust' bakery website">
+        <meta name="keywords" content="bakery, Manchester, bread, pastries, coffee, juice, cocktails, workshops, masterclass, events">
+        <script src = "script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="book">Book</h1>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="book.html">Book</a></li>
+            </ul>
+        </nav>
+        <main class="book-grid-container">
+            <section class="book-grid-item-1">
+                <ul>
+                    <li>Crumble Cottage</li>
+                    <li>Bread Street</li>
+                    <li>Debdale</li>
+                    <li>M18 8QF</li>
+                    <br>
+                    <li>161 928 1313</li>
+                    <br>
+                    <li><a href="https://maps.google.co.uk/" target="_blank">Find</a> us</li>
+                </ul>
+            </section>
+            <section class="book-grid-item-2">
+                <h2>Make a booking:</h2>
+                    <form name="book">
+                        <fieldset>
+                            <legend>
+                                How many people?
+                            </legend>
+                                <input type = "radio" name = "people" id = "1" value = "1">
+                                    <label for = "1">1</label>
+                                <input type = "radio" name = "people" id = "2" value = "2">
+                                    <label for = "2">2</label>
+                                <input type = "radio" name = "people" id = "3" value = "3">
+                                    <label for = "3">3</label>
+                                <input type = "radio" name = "people" id = "4" value = "4">
+                                    <label for = "4">4</label>
+                                <input type = "radio" name = "people" id = "more" value = "more">
+                                    <label for = "more">more</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                What day?
+                            </legend>
+                                <input type = "radio" name = "day" id = "Mon" value = "Mon">
+                                    <label for = "Mon">Mon</label>
+                                <input type = "radio" name = "day" id = "Tues" value = "Tues">
+                                    <label for = "Tues">Tues</label>
+                                <input type = "radio" name = "day" id = "Wed" value = "Wed">
+                                    <label for = "Wed">Wed</label>
+                                <input type = "radio" name = "day" id = "Thur" value = "Thur">
+                                    <label for = "Thur">Thur</label>
+                                <input type = "radio" name = "day" id = "Fri" value = "Fri">
+                                    <label for = "Fri">Fri</label>   
+                                <input type = "radio" name = "day" id = "Sat" value = "Sat">
+                                    <label for = "Sat">Sat</label> 
+                                <input type = "radio" name = "day" id = "Sun" value = "Sun">
+                                    <label for = "Sun">Sun</label>                    
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                What time?
+                            </legend>
+                                <input type = "radio" name = "time" id = "8am-9am" value = "8am-9am">
+                                    <label for = "8am-9am">8am-9am</label>
+                                <input type = "radio" name = "time" id = "9am-10am" value = "9am-10am">
+                                    <label for = "9am-10am">9am-10am</label>
+                                <input type = "radio" name = "time" id = "10am-11am" value = "10am-11am">
+                                    <label for = "10am-11am">10am-11am</label>
+                                <input type = "radio" name = "time" id = "11am-12pm" value = "11am-12pm">
+                                    <label for = "11am-12pm">11am-12pm</label>
+                                <input type = "radio" name = "time" id = "12pm-1pm" value = "12pm-1pm">
+                                    <label for = "12pm-1pm">12pm-1pm</label>   
+                                <input type = "radio" name = "time" id = "1pm-2pm" value = "1pm-2pm">
+                                    <label for = "1pm-2pm">1pm-2pm</label> 
+                                <input type = "radio" name = "time" id = "2pm-3pm" value = "2pm-3pm">
+                                    <label for = "2pm-3pm">2pm-3pm</label> 
+                                <input type = "radio" name = "time" id = "3pm-4pm" value = "3pm-4pm">
+                                    <label for = "3pm-4pm">3pm-4pm</label>                   
+                        </fieldset>
+                        <br>
+                        <button class="button" type = "button" onclick = "checkBooking()">Submit</button>
+                    </form>
+            </section>
+            <section class="book-grid-item-3">
+                <h1>Events & Workshops</h1>
+            </section>
+            <section class="book-grid-item-4">
+                <h2>Fri 22 Sep 8pm</h2>
+                <h3>Jazzy Jamboree</h3>
+                <p>Transport yourself to the heart of New Orleans right here in Manchester. Revel in the soulful melodies of a local live jazz band as you dance the night away and savor exquisite canapés and cocktails.</p>
+                <br>
+                <button class="button" type = "button" onclick = "bookJazzy()">Book</button>
+            </section>
+            <section class="book-grid-item-6">
+                <h2>Tue 26 Sep 6pm</h2>
+                <h3>Bobby's Bread Bonanza</h3>
+                <p>You knead to unlock the secrets of artisan breadmaking with our head baker, Bobby, as he takes you on a journey through the craftsmanship of sourdough to focaccia.</p>
+                <br>
+                <button class="button" type = "button" onclick = "bookBobby()">Book</button>
+            </section>
+            <section class="book-grid-item-8">
+                <h2>Sun 8 Oct 2pm</h2>
+                <h3>Macaron Madness</h3>
+                <p>Join our queen of desserts, Kiera, as she guides you through the artistry of crafting the perfect macaron.</p>
+                <br>
+                <button class="button" type = "button" onclick = "bookMacaron()">Book</button>
+            </section>
+            <section class="book-grid-item-5">
+                <img src="jazz.jpg" width="600px" alt="neon jazz sign"> 
+                <br>
+            </section>
+            <section class="book-grid-item-7">
+                <img src="breadMake.jpg" width="600px" alt="male hands kneading dough">
+                <br>
+            </section>
+            <section class="book-grid-item-9">
+                <img src="macaron.jpg" width="600px" alt="various coloured macarons on a plate with rose petal garnish">
+                <br>
+            </section>
+            <section class="book-grid-item-10">
+                <h2>Fri 13 Oct 7:30pm</h2>
+                <h3>Cocktail Calamity</h3>
+                <p>Make, Shake, Taste! Join the maestro of mixology, Harris, for an exclusive cocktail masterclass. It's the perfect opportunity to forge new friendships, or you can even reserve an entire class for a private experience another day. [min.6 guests]</p>
+                <br>
+                <button class="button" type = "button" onclick = "bookCocktail()">Book</button>
+            </section>
+            <section class="book-grid-item-12">
+                <h2>Wed 18 Oct 10am</h2>
+                <h3>Charity Coffee</h3>
+                <p>Join our whole team for our monthly charity coffee morning. Our charity of choice this month is, 'The Society For Abandoned Animals'.</p>
+                <br>
+                <button class="button" type = "button" onclick = "bookCharity()">Book</button>
+            </section>
+            <section class="book-grid-item-14">
+                <h2>Sat 28 Oct 6pm</h2>
+                <h3>Halloween Hullaballoo</h3>
+                <p>Join us for our yearly Halloween party. Groove to the rhythms of a local live jazz band while indulging in a selection of eerie cocktails and appetizers.</p>
+                <br>
+                <button class="button" type = "button" onclick = "bookHalloween()">Book</button>
+            </section>
+            <section class="book-grid-item-11">
+                <img src="cocktail.jpg" width="600px" alt="fully garnished cocktail">
+                <br>
+            </section>
+            <section class="book-grid-item-13">
+                <img src="kitten.jpg" width="600px" alt="kitten">
+                <br>
+            </section>
+            <section class="book-grid-item-15">
+                <img src="ghost.jpg" width="600px" alt="man dressed as ghost with sunglasses">
+                <br>
+            </section>
+            <section class="home-grid-item-8">
+                <a href="#top"><img src="up.png" style="width:20px; height:20px;"></a>
+            </section>
+        </main>
+        <footer class="footer">
+            <img class= "footLogo" src="name.png" width="160px" alt="The Last Crust">
+            <ul class="footContact">
+                <li>Crumble Cottage</li>
+                <li>Bread Street</li>
+                <li>Debdale</li>
+                <li>M18 8QF</li>
+                <br>    
+                <li>0161 928 1313</li>
+                <br>
+                <li>
+                <a href="https://mail.google.com/" target="_blank"><img src="email.png" style=" width:20px; height:20px;"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" style=" width:20px; height:20px;"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" style=" width:20px; height:20px;"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="twitter.png" style=" width:20px; height:20px;"></a>
+                <a href="https://www.tiktok.com/" target="_blank"><img src="tiktok.png" style=" width:20px; height:20px;"></a>
+                </li>
+                <br>
+                <li>Copyright 2023 The Last Crust</li>
+            </ul>
+        </footer>
+    </body>
+</html>
