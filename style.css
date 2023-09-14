@@ -40,49 +40,40 @@ img {
 }
 
 /*footer*/
-.footer > ul > li{
+.footer{
     color: black;
-    list-style-type: none;
-}
-
-#footAddress{
     overflow: hidden;
     list-style-type: none;
-    display: table;
-    float: left;
-}
-
-#footPhoneNo{
-    float: left;
-    display: table;
-    padding-left: 50px;
- 
-}
-
-#footLogo{
+    display: inline;
     text-align: center;
-    overflow: hidden;
-    list-style-type: none;
-    display: table;
-    padding-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 10px;
+    margin: 10px;
+}  
+
+.footLogo{
+    text-align: center;
 }
 
-#footSocials{
-    overflow: hidden;
+.footContact{
+    overflow:hidden;
     list-style-type: none;
-    display: table;
     float: right;
-    padding-right: 20px;
-    list-style-type: none;
+    padding: 10px;
 }
 
-#footCopyright{
+/*Button*/
+.button {
+    background-color: #f6617f;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
-    padding-top: 80px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
-
 
 /*Home Page*/
 .home-grid-container{
@@ -125,7 +116,9 @@ img {
     padding-top: 45px;
     color: #2E1A47;
     text-decoration: none;
-    text-align: center;
+}
+.home-grid-item-5 > p > a {
+    text-decoration: none;
 }
 
 #open{
@@ -172,6 +165,9 @@ img {
     color: #2E1A47;
     text-decoration: none;
     color: 34282C;
+}
+.home-grid-item-7 > h2 > a {
+    text-decoration: none;
 }
 
 .home-image-grid-1{
@@ -336,12 +332,18 @@ img {
     padding: 10px;
     margin-right: 10px;
 }
+.about-grid-item-4 > p > a {
+    text-decoration: none;
+}
 
 .about-grid-item-5{
     grid-column: 1 / span 8;
     padding: 10px;
     margin-left: 10px;
     text-align: end; /*or not????*/
+}
+.about-grid-item-5 > p > a {
+    text-decoration: none;
 }
 
 .about-grid-item-6{
@@ -363,12 +365,18 @@ img {
     padding: 10px;
     margin-right: 10px;
 }
+.about-grid-item-8 > p > a {
+    text-decoration: none;
+}
 
 .about-grid-item-9{
     grid-column: 1 / span 8;
     padding: 10px;
     margin-left: 10px;
     text-align: center;
+}
+.about-grid-item-9 > p > a {
+    text-decoration: none;
 }
 
 .about-grid-item-10{
@@ -389,6 +397,9 @@ img {
     margin-right: 10px;
     text-align: center;
 }
+.about-grid-item-12 > p > a {
+    text-decoration: none;
+}
 
 /*Book Page*/
 #book{
@@ -402,23 +413,20 @@ img {
 }
 
 .book-grid-item-1{
-    grid-column: 1 / span 6;
-    background-color: orchid;
+    grid-column: 1 / span 3;
     padding: 10px;
-    margin-left: 10px;
-    text-align: center;
+    text-align: start;
+    margin-top: 40px;
 }
 .book-grid-item-1 > ul {
     list-style-type: none;
 }
 .book-grid-item-1 > p > a {
     text-decoration: none;
-    color:#2E1A47;
 }
 
 .book-grid-item-2{
-    grid-column: 7 / span 6;
-    background-color: red;
+    grid-column: 4 / span 9;
     padding: 10px;
     margin-right: 10px;
     max-width: 100%;
